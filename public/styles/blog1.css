@@ -1,0 +1,99 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #d3c9c9;
+    color: #333;
+}
+
+/* Container */
+.container {
+    /* text-align: center;  */
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #c6c7c8;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+h1.comments-title {
+    font-size: 2em;
+    margin-top: 40px;
+}
+
+/* Images */
+img.main-image {
+    
+    display: block; /* Makes the image a block element */
+    margin-left: auto; /* Aligns the image to the center */
+    margin-right: auto; /* Aligns the image to the center */
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+pre {
+    white-space: pre-wrap; /* Allows text to wrap */
+    word-wrap: break-word; /* Breaks long words */
+    margin-top: 10px; /* Reduce the margin to bring text closer to the image */
+    line-height: 1.6;
+}
+/* Comment Section */
+.comment1 {
+    border-top: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.comment1 img {
+    display: inline-block;
+    float: left;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Form Styles */
+.form-control {
+    width: calc(100% - 90px);
+    display: inline-block;
+}
+
+.btn {
+    padding: 8px 15px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    .form-control {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}

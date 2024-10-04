@@ -1,0 +1,106 @@
+body{
+    margin: 0;
+    
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: rgb(59, 50, 42);
+    font-family: "Poppins, sans-serif";
+}
+
+.container{
+    width: auto;
+    height: 100vh;
+    padding-top: 30px;
+    gap: 40px;
+    display: flex;
+    /* flex-wrap: nowrap; */
+    flex-direction: row;
+    justify-content: center;
+    /* overflow-x: auto; */
+    
+}
+
+.container-fluid {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.container-fluid h1 {
+    margin: 0 0 20px 0;
+}
+
+.container-fluid nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+.card-img-top {
+    object-fit: cover;
+    width: 130px;
+    height: 150px;
+    border-radius: 20px;
+    margin-top: 25px;
+    margin-left: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    transform: translate(0, -10%);
+
+}
+
+.card-title{
+    color: white;
+    font-size: 24px;
+    margin-left: 50px;
+    font-weight: 600;
+    justify-content: center;
+}
+
+.btn-primary {
+    margin-top: 1px;
+    margin-left: 60px;
+    background: transparent;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 50rem;
+    cursor: pointer;
+    border: 1px solid white;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-primary:hover {
+    background: white;
+    color: rgb(70, 65, 66);
+}
+
+.card-body{
+    
+    width: 200px;
+    height: 250px;
+    display: flex;
+    gap: 5px;
+    background: rgb(60, 60, 60);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    /* display: flex; */
+    flex-direction: row;
+    
+    justify-content: center;
+    align-items: center;
+    transform: translate(0,-5%);
+    /* width: 250px; */
+    
+}
+

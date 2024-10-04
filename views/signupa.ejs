@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+    <%- include('./Partials/Headabc') %>
+    <title>Signup</title>
+    <meta name="viewport" content="width=device-width, initial scale=1" />
+    <link rel="stylesheet" type="text/css" href="../public/styles/signup.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <%- include('./Partials/nava') %>
+
+    <div class="container mt-4">
+        <form action="/user/signupa" method="post" id="form_1">
+          <div class="box mt-4">
+            <label for="exampleInputName1" class="fl fontLable">Full Name</label>
+            <div class="new iconBox">
+              <i class="fa fa-user" aria-hidden="true"></i>
+            </div>
+            <div class="fr">
+            <input type="text" name="fullName" id="exampleInputName1" aria-describedby="emailHelp" class="textBox"></div>
+            <div class="clr"></div>
+            
+          </div>
+
+            <div class="box mb-4">
+              <label for="exampleInputEmail1" class="fl fontLable">Email address</label>
+              <div class="fl iconBox"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+              <div class="fr">
+              <input type="email" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" class="textBox"></div>
+              <div class="clr"></div>
+              <div id="emailHelp" class="box terms">We'll never share your email with anyone else. </div>
+            </div>
+            <div class="box mb-4">
+              <label for="exampleInputPassword1" class="fl fontLable">Password</label>
+              <div class="fl iconBox"><i class="fa fa-key" aria-hidden="true"></i></div>
+              <div class="fr">
+              <input type="password" name="password" id="exampleInputPassword1" class="textBox"></div>
+              <div class="clr"></div>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+    </div>
+    <%- include('./Partials/scripts') %>
+</body>
+</html>
