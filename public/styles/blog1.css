@@ -61,7 +61,7 @@ pre {
 
 .comment1 img {
     display: inline-block;
-    float: left;
+    float : left ;
     border-radius: 50%;
     margin-right: 10px;
 }
