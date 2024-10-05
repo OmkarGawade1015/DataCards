@@ -1,3 +1,4 @@
+require('dotenv').config();
 let path = require("path");
 let express = require("express");
 let userRoute = require('./routes/user');
@@ -12,9 +13,10 @@ let { checkauthenticationcookie } = require("./middlewares/authentication");
 
 
 let app = express();
-let port = 8002;
-
-mongoose.connect('mongodb://localhost:27017/blogify').then(e => console.log("MongoDB Connected"));
+let port = process.env.PORT || 8002;
+// let mongoUrl = "mongodb+srv://omkargawade1015:Omkar1234@cluster0.u62m3.mongodb.net/";
+mongoose.connect(process.env.mongoUrl).then(e => console.log("MongoDB Connected"));
+// mongoose.connect('mongodb://localhost:27017/blogify').then(e => console.log("MongoDB Connected"));
 app.set('view engine', 'ejs');
 app.set('views', path.resolve("./views"));
 
